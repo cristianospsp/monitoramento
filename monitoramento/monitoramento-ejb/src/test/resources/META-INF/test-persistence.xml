@@ -20,7 +20,6 @@
    
    <persistence-unit name="monitoramentoMySql">
       <jta-data-source>java:jboss/datasources/monitoramentoMySqlTestDS</jta-data-source>
-      <exclude-unlisted-classes>true</exclude-unlisted-classes>
       <properties>
          <!-- Properties for Hibernate -->
          <property name="hibernate.hbm2ddl.auto" value="create-drop" />
@@ -28,6 +27,5 @@
          <property name="hibernate.show_sql" value="true" />
          <property name="hibernate.format_sql" value="true"/>
       </properties>
-    <class>br.com.accisunm.monitoramento.model.Funcionario</class>
    </persistence-unit>
 </persistence>
